@@ -43,6 +43,10 @@ fi
 # show me files matching "ls grep"
 alias lsg='ll | grep'
 
+# personal navigation stuff
+alias la='ls -a'
+alias seniors='cd ~/Dropbox/SeniorS1'
+
 # Alias Editing
 TRAPHUP() {
   source $yadr/zsh/aliases.zsh
