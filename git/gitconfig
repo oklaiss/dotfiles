@@ -127,3 +127,4 @@
   path = .gitconfig.user
 [user]
 	name = Owen Klaiss
+	email = oklaiss@smu.edu
