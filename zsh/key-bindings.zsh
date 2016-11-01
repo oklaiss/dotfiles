@@ -9,6 +9,10 @@ bindkey '^r' history-incremental-search-backward    # [Ctrl-r] - Search backward
 bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
 
+# jumping forward and back words in terminal is option-arrow key
+bindkey "^[^[[D" forward-word
+bindkey "^[^[[C" backward-word
+
 # Make numpad enter work
 bindkey -s "^[Op" "0"
 bindkey -s "^[Ol" "."
