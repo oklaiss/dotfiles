@@ -40,6 +40,15 @@ elif [[ $platform == 'darwin' ]]; then
   alias ls='ls -Gh'
 fi
 
+#  use brew vim if present
+#/usr/local/bin/vim --version > /dev/null 2>&1
+#BREW_VIM_INSTALLED=$?
+
+#if [ $BREW_VIM_INSTALLED -eq 0 ]; then
+
+#   alias vi="/usr/local/bin/vim"
+#fi
+
 # show me files matching "ls grep"
 alias lsg='ll | grep'
 
