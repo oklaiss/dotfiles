@@ -52,6 +52,17 @@ about each one, use:
 sh -c "`curl -fsSL https://raw.githubusercontent.com/oklaiss/dotfiles/master/install.sh`" -s ask
 ```
 
+### On Mac OSX El Capitan?
+
+Verify brew is working correctly by running ``` brew --version ```
+If that doesn't work, then:
+Run ``` sudo chown -R $(whoami):admin /usr/local ```
+If ``` brew --version ``` still doesnt work:
+``` cd /usr/local ```
+``` git reset --hard ```
+``` git clean -df ```
+``` brew update ```
+
 ## Wait, you're not done! Do this:
 
 #### Install iTerm Solarized Colors
@@ -68,6 +79,16 @@ This will give you fast full screen windows that are switchable without switchin
 
 #### in MacVim, uncheck Prefer native fullscreen under Advanced settings
 Same as iTerm. The Lion style spaces navigation slows everything down for no reason.
+
+#### NeoComplete not working in VIM?
+
+```
+brew uninstall macvim
+brew uninstall vim
+brew install macvim --with-cscope --with-lua --HEAD
+brew install luajit
+brew install vim --with-luajit
+```
 
 ## If you want to run vim in terminal
 
