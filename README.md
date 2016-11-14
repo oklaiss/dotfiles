@@ -61,10 +61,12 @@ Run
 sudo chown -R $(whoami):admin /usr/local
 ```
 If ``` brew --version ``` still doesnt work:
-``` cd /usr/local
+```
+cd /usr/local
 git reset --hard
 git clean -df
-brew update ```
+brew update
+```
 
 ## Wait, you're not done! Do this:
 
