@@ -56,12 +56,15 @@ sh -c "`curl -fsSL https://raw.githubusercontent.com/oklaiss/dotfiles/master/ins
 
 Verify brew is working correctly by running ``` brew --version ```
 If that doesn't work, then:
-Run ``` sudo chown -R $(whoami):admin /usr/local ```
+Run
+```
+sudo chown -R $(whoami):admin /usr/local
+```
 If ``` brew --version ``` still doesnt work:
-``` cd /usr/local ```
-``` git reset --hard ```
-``` git clean -df ```
-``` brew update ```
+``` cd /usr/local
+git reset --hard
+git clean -df
+brew update ```
 
 ## Wait, you're not done! Do this:
 
